@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sklep - rejestracja</title>
+    <link rel="stylesheet" href="styl.css" />
+  </head>
+
+  <body>
+    <aside>
+      <img src="obraz.png" alt="promocje" />
+      <h2>Sprawdź promocje</h2>
+      <table>
+        <tr>
+          <th>co?</th>
+          <th>ile taniej?</th>
+        </tr>
+        <tr>
+          <td>ubrania</td>
+          <td>15%</td>
+        </tr>
+        <tr>
+          <td>buty</td>
+          <td>25%</td>
+        </tr>
+      </table>
+    </aside>
+
+    <header>
+      <h1>Zarejestruj się w sklepie</h1>
+    </header>
+
+    <main>
+      <nav>
+        <button class="register-button">Klient</button>
+        <button class="register-button">Adres</button>
+        <button class="register-button">Kontakt</button>
+      </nav>
+
+      <form id="register-form">
+        <section class="register-block">
+          <p>Imię</p>
+          <input id="imie" type="text" placeholder="Wpisz dane..." />
+          <p>Nazwisko</p>
+          <input id="nazwisko" type="text" />
+          <p>Data urodzenia</p>
+          <input id="dataUrodzenia" type="date" />
+        </section>
+
+        <section class="register-block">
+          <p>Ulica</p>
+          <input id="ulica" type="text" />
+          <p>Numer</p>
+          <input id="numer" type="number" />
+          <p>Miasto</p>
+          <input id="miasto" type="text" />
+        </section>
+
+        <section class="register-block">
+          <p>Numer komórkowy</p>
+          <input id="numerTelefonu" type="tel" />
+          <br />
+          <label>
+            <input type="checkbox" id="rodo" />
+            Akceptuję RODO
+          </label>
+          <br />
+          <button type="button" onclick="zatwierdz()">Zatwierdź dane</button>
+        </section>
+      </form>
+    </main>
+
+    <section id="progress-container">
+      <section id="progress-bar"></section>
+    </section>
+
+    <footer>
+      <h4>Rejestrację do sklepu wykonał: Rayski</h4>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
